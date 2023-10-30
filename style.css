@@ -18,7 +18,19 @@ h3 {
 
 /* Header */
 header {
+  white-space: nowrap;
   text-align: center;
+}
+
+header h1 {
+  vertical-align: middle;
+  display: inline-block;
+  font-family: "Playfair Display", Times, serif;
+}
+
+header nav {
+  vertical-align: middle;
+  display: inline-block;
 }
 
 /* Containers */
@@ -32,9 +44,33 @@ article {
   padding: 50px 0;
 }
 
-article div {
+.aboutRow {
+  display: flex;
+}
+
+.aboutImage {
+  display: inline-block;
   text-align: center;
-  width: 100%;
+}
+
+.peteIntro {
+  display: inline-block;
+  text-align: left;
+}
+
+.portfolioRow {
+  display: flex;
+}
+
+.column {
+  display: inline-block;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.column p {
+  text-align: center;
+  font-size: 14px;
 }
 
 /* Paragraphs */
@@ -57,7 +93,7 @@ nav a {
 
 /* Images */
 img {
-  width: 100%;
+  width: 33.33%;
   max-width: 200px;
   height: auto;
 }
@@ -65,6 +101,9 @@ img {
 .image-circle {
   border: 2px solid #003049;
   border-radius: 50%;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
 }
 
 /* Footer */
